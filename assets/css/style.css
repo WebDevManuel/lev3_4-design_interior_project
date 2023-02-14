@@ -43,6 +43,11 @@ figcaption {
     font-family: work;
 }
 
+a {
+    text-decoration: none;
+
+}
+
 /*######################################
                 HEADER
 ######################################*/
@@ -189,4 +194,19 @@ footer section.getInTouch section.form form div {
 footer section.getInTouch section.form form input,
 footer section.getInTouch section.form form textarea {
     width: 100%;
+}
+
+footer section.footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    background-color: var(--background-color-footer);
+    color: var(--font-color-light);
+}
+
+footer section.footer a,
+footer section.footer p {
+    font-family: lora;
+    color: var(--background-color-light);
 }
