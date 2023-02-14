@@ -18,10 +18,11 @@
 }
 
 :root {
-    --background-color: #2e2e2e;
+    --background-color-dark: #2e2e2e;
+    --background-color-light: #fff;
     --background-color-footer: #1d2c2f;
     --font-color-light: #fff;
-    --font-color-dark: #000;
+    --font-color-dark: #1d2c2f;
 }
 
 General {
@@ -38,7 +39,8 @@ h3 {
 }
 
 p,
-a {
+a,
+figcaption {
     font-family: work;
 }
 
@@ -77,11 +79,12 @@ div.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--background-color-dark);
 }
 
 div.header__nav img {
-    width: 7%;
+    width: 10%;
+    padding: 10px
 }
 
 div.header__nav a {
@@ -99,32 +102,64 @@ header nav {
 /*######################################
                 MAIN
 ######################################*/
-main section{
+main section {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--font-color-light);
-    background-color: var(--background-color);
-    padding: 15vh 0;
+    background-color: var(--background-color-dark);
+    padding: 10vh 0;
 }
 
-main section img{
-    width:50%
+main section img {
+    width: 50%
 }
-main section article h1{
+
+main section article h2 {
     font-size: 2em;
     font-weight: 600;
 }
 
-main section article p{
+main section article p {
     text-align: left;
     padding: 10px 20px;
     font-weight: 300;
 }
 
+main section.section--light {
+    background-color: var(--background-color-light);
+    color: var(--font-color-dark);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15vh;
+}
 
+main section.section--light article {
+    width: 70%;
+}
 
+main section div.section__gallery {
+    width: 95%;
+    display: flex;
+    padding: 7vh 0;
+}
+
+main section div.section__gallery img {
+    width: 85%;
+}
+
+main section div.section__gallery figcaption {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.6em;
+    color: var(--font-color-dark);
+}
+
+main section.section--light iframe {
+    width: 33%;
+    aspect-ratio: 16/9;
+}
 
 /*######################################
                 FOOTER
