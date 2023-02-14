@@ -96,11 +96,32 @@ header nav {
     justify-content: space-around;
 }
 
-
-
 /*######################################
                 MAIN
 ######################################*/
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--font-color-light);
+    background-color: var(--background-color);
+    padding: 15vh 0;
+}
+
+main section img{
+    width:50%
+}
+main section article h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+main section article p{
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: 300;
+}
 
 
 
