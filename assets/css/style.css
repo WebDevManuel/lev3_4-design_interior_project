@@ -17,6 +17,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-color: #2e2e2e;
+    --background-color-footer: #1d2c2f;
+    --font-color-light: #fff;
+    --font-color-dark: #000;
+}
+
 General {
     font-family:
         Lora Work sans;
@@ -24,10 +31,70 @@ General {
         #2e2e2e #fff #000 #1d2c2f;
 }
 
+h1,
+h2,
+h3 {
+    font-family: lora;
+}
+
+p,
+a {
+    font-family: work;
+}
+
 /*######################################
                 HEADER
 ######################################*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 
+header div:nth-of-type(1) {
+    width: 40%;
+}
+
+header h1 {
+    font-size: 4.3em;
+    font-weight: 500;
+}
+
+header h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+header img {
+    width: 60%;
+}
+
+div.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+div.header__nav img {
+    width: 7%;
+}
+
+div.header__nav a {
+    color: var(--font-color-light);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
