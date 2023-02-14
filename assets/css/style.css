@@ -1,0 +1,43 @@
+/*######################################
+                GENERAL
+######################################*/
+@font-face {
+    font-family: lora;
+    src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: work;
+    src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+General {
+    font-family:
+        Lora Work sans;
+    color:
+        #2e2e2e #fff #000 #1d2c2f;
+}
+
+/*######################################
+                HEADER
+######################################*/
+
+
+
+
+/*######################################
+                MAIN
+######################################*/
+
+
+
+
+/*######################################
+                FOOTER
+######################################*/
